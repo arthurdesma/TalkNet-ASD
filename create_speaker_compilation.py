@@ -6,8 +6,8 @@ import argparse
 
 # --- Configuration ---
 parser = argparse.ArgumentParser(description="TalkNet Post-Processor: Create One Video Per Speaker Track")
-parser.add_argument('--videoName',          type=str,   default="001",   help='The name of the video you processed with TalkNet')
-parser.add_argument('--videoFolder',        type=str,   default="demo/video",  help='The folder containing your video and its result folder')
+parser.add_argument('--videoName',          type=str,   default="003",   help='The name of the video you processed with TalkNet')
+parser.add_argument('--videoFolder',        type=str,   default="demo",  help='The folder containing your video and its result folder')
 parser.add_argument('--outputFolder',       type=str,   default="speakers_output", help='Name of the folder to save the final speaker videos')
 parser.add_argument('--speaking_threshold', type=float, default=0.0,     help='Average score threshold to consider a track as "speaking"')
 args = parser.parse_args()

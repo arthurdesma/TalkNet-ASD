@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore")
 parser = argparse.ArgumentParser(description = "TalkNet Demo or Columnbia ASD Evaluation")
 
 parser.add_argument('--videoName',             type=str, default="001",   help='Demo video name')
-parser.add_argument('--videoFolder',           type=str, default="demo/video",  help='Path for inputs, tmps and outputs')
+parser.add_argument('--videoFolder',           type=str, default="demo",  help='Path for inputs, tmps and outputs')
 parser.add_argument('--pretrainModel',         type=str, default="pretrain_TalkSet.model",   help='Path for the pretrained TalkNet model')
 
 parser.add_argument('--nDataLoaderThread',     type=int,   default=10,   help='Number of workers')
